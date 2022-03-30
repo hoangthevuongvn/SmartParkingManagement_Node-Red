@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>RMC parking</title>
+    <style>
+        td {
+            background-color: ;
+            height: 95px;
+            width: 200px;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .car {
+            width: 145px;
+            height: 65px;
+            background-image: url("https://i.ibb.co/h938z98/car.png");
+            background-repeat: no-repeat;
+        }
+
+        .car1 {
+            width: 145px;
+            height: 65px;
+            background-image: url("https://i.ibb.co/98mKsZY/car1.png");
+            background-repeat: no-repeat;
+
+        }
+
+        .car2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 45px;
+            width: 85px;
+            height: 135px;
+            background-image: url("https://i.ibb.co/vj99p9G/unparked.png");
+            background-repeat: no-repeat;
+        }
+
+        #p {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h1 {
+            width: 100px;
+            margin-top: -20px;
+            margin-left: 255px;
+            background: white;
+            font-size: 30px
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img src="http://ilovenb.wap.sh/hinhnen/la-co-viet-nam/Anh-bia-Toi-yeu-Viet-Nam-co-do-sao-vang-10.jpg"
+        style=" display: block;height: 120px;width: 86%; margin-left: auto; margin-right: auto;">
+
+    <br>
+    <center>
+
+        <p style="padding-top: ;padding-left: 27%">
+            <font style="font-size: 25px"><b>Bãi đỗ xe</b>
+                <font style="color: #3ED715;font-size: 18px;padding-left: 240px"> * Còn trống </font> &nbsp; <font
+                    style="color: red;font-size: 18px"> * Đã có xe! </font>
+        </p>
+    </center>
+    <div class="row">
+
+        <div class="container" style="border:2px solid black; width:85% ">
+
+            <h1 style="margin-top:30px;  margin-left:-20px; width:70px"> LỐI VÀO</h1>
+            <h2 style="margin-top:-80px;  margin-left:1035px; width:70px">LỐI RA</h2>
+
+            <div class="col-md-4" style="margin-left: 0px">
+                <table style="">
+                    <tr>
+                        <td style="border-top:5px solid  #FFFF01;border-left:5px solid  #FFFF01 ">
+                            <div class="car" id="c1" style=" margin-left: 20px">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="border-top:5px solid  #FFFF01;border-left:5px solid  #FFFF01">
+                            <div class="car" id="c2" style=" margin-left: 20px"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="border-top:5px solid  #FFFF01;border-left:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car" style=" margin-left: 20px" id="c3"></div>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4" style="margin-right: 0px">
+                <table>
+                    <tr>
+                        <td
+                            style="border-right:3px solid #FFFF01;border-bottom:5px solid  #FFFF01;border-top:5px solid  #FFFF01">
+                            <div class="car1" style=" margin-left: 20px" id="c4"></div>
+                        </td>
+
+                        <td style="border-bottom:5px solid  #FFFF01;border-top:5px solid  #FFFF01">
+                            <div class="car" style=" margin-left: 20px;" id="c5"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td style="border-right:3px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car1" style=" margin-left: 20px" id="c6"></div>
+                        </td>
+                        <td style="border-bottom:5px solid  #FFFF01">
+                            <div class="car" style=" margin-left: 20px;" id="c17"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right:3px solid  #FFFF01;border-bottom:5px solid  #FFFF01 ">
+                            <div class="car1" style=" margin-left: 20px" id="c7"></div>
+                        </td>
+                        <td style="border-bottom:5px solid  #FFFF01">
+                            <div class="car" style=" margin-left: 20px" id="c18"></div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col-md-4" style="padding-left: 160px">
+                <table>
+                    <tr>
+                        <td
+                            style="border-bottom:5px solid  #FFFF01;border-top:5px solid  #FFFF01;border-right:5px solid  #FFFF01">
+                            <div class="car1" style=" margin-left: 20px" id="c8"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="border-bottom:5px solid  #FFFF01;border-right:5px solid  #FFFF01">
+                            <div class="car1" style=" margin-left: 20px" id="c9"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car1" style=" margin-left: 20px" id="c10"></div>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="col-md-12" style="padding-top: 20px  ">
+                <table>
+                    <tr>
+                        <td
+                            style="border-left:5px solid  #FFFF01;border-right:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01;">
+                            <div class="car2" id="c11"></div>
+                        </td>
+                        <td style="border-right:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car2" id="c12"></div>
+                        </td>
+                        <td style="border-right:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car2" id="c13"></div>
+                        </td>
+                        <td style="border-right:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car2" id="c14"></div>
+                        </td>
+                        <td style="border-right:5px solid  #FFFF01;border-bottom:5px solid  #FFFF01">
+                            <div class="car2" id="c15"></div>
+                        </td>
+                        <td style="border-bottom:5px solid  #FFFF01; border-right:5px solid  #FFFF01">
+                            <div class="car2" id="c16"></div>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>    
+            <script>
+                (function (scope) {
+                    console.log('Position 1');
+                    console.dir(scope);
+                    scope.$watch('msg.payload', function (data) {
+
+
+                        //chuong so 1
+                        if (data[0].id == 1 && data[0].status == "parked") {
+                            $("#c1").css('background-image', 'url(https://i.ibb.co/ryPqw0V/carparked.png)');
+                        }
+                        if (data[0].id == 1 && data[0].status == "available") {
+                            $("#c1").css('background-image', 'url(https://i.ibb.co/h938z98/car.png)');
+                        };
+                        //chuong so 2
+                        if (data[1].id == 2 && data[1].status == "parked") { $("#c2").css('background-image', 'url(https://i.ibb.co/ryPqw0V/carparked.png)'); }
+
+                        if (data[1].id == 2 && data[1].status == "available") {
+                            $("#c2").css('background-image', 'url(https://i.ibb.co/h938z98/car.png)');
+                        };
+                        //chuong so 3
+                        if (data[2].id == 3 && data[2].status == "parked") {
+                            $("#c3").css('background-image', 'url(https://i.ibb.co/ryPqw0V/carparked.png)');
+                        }
+                        if (data[2].id == 3 && data[2].status == "available") {
+                            $("#c3").css('background-image', 'url(https://i.ibb.co/h938z98/car.png)');
+                        };
+                        //chuong so 5
+                        if (data[4].id == 5 && data[4].status == "parked") {
+                            $("#c5").css('background-image', 'url(https://i.ibb.co/ryPqw0V/carparked.png)');
+                        }
+                        if (data[4].id == 5 && data[4].status == "available") {
+                            $("#c5").css('background-image', 'url(https://i.ibb.co/h938z98/car.png)');
+                        };
+                        //chuong so 17
+                        if (data[16].id == 17 && data[16].status == "parked") {
+                            $("#c17").css('background-image', 'url(https://i.ibb.co/ryPqw0V/carparked.png)');
+                        }
+                        if (data[16].id == 17 && data[16].status == "available") {
+                            $("#c17").css('background-image', 'url(https://i.ibb.co/h938z98/car.png)');
+                        };
+                        //chuong so 18
+                        if (data[17].id == 18 && data[17].status == "parked") {
+                            $("#c18").css('background-image', 'url(https://i.ibb.co/ryPqw0V/carparked.png)');
+                        }
+                        if (data[18].id == 18 && data[17].status == "available") {
+                            $("#c18").css('background-image', 'url(https://i.ibb.co/h938z98/car.png)');
+                        };
+
+
+                        //chuong so 11
+                        if (data[10].id == 11 && data[10].status == "parked") {
+                            $("#c11").css('background-image', 'url(https://i.ibb.co/1K79s7J/parked.png)');
+                        }
+                        if (data[10].id == 11 && data[10].status == "available") {
+                            $("#c11").css('background-image', 'url(https://i.ibb.co/vj99p9G/unparked.png)');
+                        };
+                        //chuong so 12
+                        if (data[11].id == 12 && data[11].status == "parked") {
+                            $("#c12").css('background-image', 'url(https://i.ibb.co/1K79s7J/parked.png)'); }
+
+                        if (data[11].id == 12 && data[11].status == "available") {
+                            $("#c12").css('background-image', 'url(https://i.ibb.co/vj99p9G/unparked.png)');
+                        };
+                        //chuong so 13
+                        if (data[12].id == 13 && data[12].status == "parked") {
+                            $("#c13").css('background-image', 'url(https://i.ibb.co/1K79s7J/parked.png)');
+                        }
+                        if (data[12].id == 13 && data[12].status == "available") {
+                            $("#c13").css('background-image', 'url(https://i.ibb.co/vj99p9G/unparked.png)');
+                        };
+                        //chuong so 14
+                        if (data[13].id == 14 && data[13].status == "parked") {
+                            $("#c14").css('background-image', 'url(https://i.ibb.co/1K79s7J/parked.png)');
+                        }
+                        if (data[13].id == 14 && data[13].status == "available") {
+                            $("#c14").css('background-image', 'url(https://i.ibb.co/vj99p9G/unparked.png)');
+                        };
+                        //chuong so 15
+                        if (data[14].id == 15 && data[14].status == "parked") {
+                            $("#c15").css('background-image', 'url(https://i.ibb.co/1K79s7J/parked.png)');
+                        }
+                        if (data[14].id == 15 && data[14].status == "available") {
+                            $("#c15").css('background-image', 'url(https://i.ibb.co/vj99p9G/unparked.png)');
+                        };
+                        //chuong so 16
+                        if (data[15].id == 16 && data[15].status == "parked") {
+                            $("#c16").css('background-image', 'url(https://i.ibb.co/1K79s7J/parked.png)');
+                        }
+                        if (data[15].id == 16 && data[15].status == "available") {
+                            $("#c16").css('background-image', 'url(https://i.ibb.co/vj99p9G/unparked.png)');
+                        };
+                        ///////
+
+
+                        //chuong so 4
+                        if (data[3].id == 4 && data[3].status == "parked") {
+                            $("#c4").css('background-image', 'url(https://i.ibb.co/XYr7Xnt/car1parked.png)');
+                        }
+                        if (data[3].id == 4 && data[3].status == "available") {
+                            $("#c4").css('background-image', 'url(https://i.ibb.co/98mKsZY/car1.png)');
+                        };
+                        //chuong so 6
+                        if (data[5].id == 6 && data[5].status == "parked") {
+                            $("#c6").css('background-image', 'url(https://i.ibb.co/XYr7Xnt/car1parked.png)'); }
+
+                        if (data[5].id == 6 && data[5].status == "available") {
+                            $("#c6").css('background-image', 'url(https://i.ibb.co/98mKsZY/car1.png)');
+                        };
+                        //chuong so 7
+                        if (data[6].id == 7 && data[6].status == "parked") {
+                            $("#c7").css('background-image', 'url(https://i.ibb.co/XYr7Xnt/car1parked.png)');
+                        }
+                        if (data[6].id == 7 && data[6].status == "available") {
+                            $("#c7").css('background-image', 'url(https://i.ibb.co/98mKsZY/car1.png)');
+                        };
+                        //chuong so 8
+                        if (data[7].id == 8 && data[7].status == "parked") {
+                            $("#c8").css('background-image', 'url(https://i.ibb.co/XYr7Xnt/car1parked.png)');
+                        }
+                        if (data[7].id == 8 && data[7].status == "available") {
+                            $("#c8").css('background-image', 'url(https://i.ibb.co/98mKsZY/car1.png)');
+                        };
+                        //chuong so 9
+                        if (data[8].id == 9 && data[8].status == "parked") {
+                            $("#c9").css('background-image', 'url(https://i.ibb.co/XYr7Xnt/car1parked.png)');
+                        }
+                        if (data[8].id == 9 && data[8].status == "available") {
+                            $("#c9").css('background-image', 'url(https://i.ibb.co/98mKsZY/car1.png)');
+                        };
+                        //chuong so 10
+                        if (data[9].id == 10 && data[9].status == "parked") {
+                            $("#c10").css('background-image', 'url(https://i.ibb.co/XYr7Xnt/car1parked.png)');
+                        }
+                        if (data[9].id == 10 && data[9].status == "available") {
+                            $("#c10").css('background-image', 'url(https://i.ibb.co/98mKsZY/car1.png)');
+                        };
+
+
+
+                    });
+                })(scope);
+
+            </script>
+</body>
+
+</html>
